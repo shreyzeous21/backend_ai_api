@@ -1,0 +1,103 @@
+# ==========================
+# Dependencies
+# ==========================
+node_modules/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Logs
+# ==========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================
+# Runtime Files
+# ==========================
+pids/
+*.pid
+*.pid.lock
+
+# ==========================
+# Coverage
+# ==========================
+coverage/
+.nyc_output/
+
+# ==========================
+# Build Output
+# ==========================
+dist/
+build/
+out/
+
+# ==========================
+# Cache
+# ==========================
+.cache/
+.parcel-cache/
+.eslintcache
+
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# Operating System
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Temporary Files
+# ==========================
+tmp/
+temp/
+
+# ==========================
+# Package Manager
+# ==========================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Uncomment if you want to keep lock files
+# !package-lock.json
+
+# ==========================
+# PM2
+# ==========================
+.pm2/
+
+# ==========================
+# Docker
+# ==========================
+docker-compose.override.yml
+
+# ==========================
+# Test Files
+# ==========================
+*.test.js
+*.spec.js
+
+# ==========================
+# Misc
+# ==========================
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
