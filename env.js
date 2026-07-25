@@ -26,8 +26,4 @@ export const ENV = Object.freeze({
       API_KEY: getEnv("GEMINI_API_KEY"),
     },
   },
-
-  SECURITY: {
-    API_SECRET: getEnv("API_SECRET", { required: true }),
-  },
 });

@@ -13,8 +13,10 @@
     "nodemon": "^3.1.14"
   },
   "dependencies": {
+    "@openrouter/sdk": "^1.1.7",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "openai": "^6.49.0"
   }
 }
