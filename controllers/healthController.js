@@ -64,12 +64,6 @@ export const healthController = (req, res) => {
 
   const heapUsage = ((memory.heapUsed / memory.heapTotal) * 100).toFixed(2);
 
-  const providers = {
-    openrouter: Boolean(ENV.AI.OPENROUTER.API_KEY),
-    gemini: Boolean(ENV.AI.GEMINI.API_KEY),
-    openai: Boolean(ENV.AI.OPENAI?.API_KEY),
-  };
-
   const end = process.hrtime.bigint();
 
   const responseTime = (Number(end - start) / 1_000_000).toFixed(3);
@@ -108,8 +102,6 @@ export const healthController = (req, res) => {
       responseTime: `${responseTime} ms`,
     },
 
-    providers,
-
     memory: {
       rss: formatBytes(memory.rss),
       heapTotal: formatBytes(memory.heapTotal),
@@ -121,9 +113,6 @@ export const healthController = (req, res) => {
     checks: {
       api: "OK",
       memory: "OK",
-      providers: Object.values(providers).some(Boolean)
-        ? "OK"
-        : "NOT CONFIGURED",
     },
   });
 };
