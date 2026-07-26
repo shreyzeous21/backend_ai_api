@@ -16,14 +16,5 @@ function getEnv(name, { required = false } = {}) {
 export const ENV = Object.freeze({
   NODE_ENV: process.env.NODE_ENV ?? "development",
   PORT: Number(process.env.PORT) || 4000,
-
-  AI: {
-    OPENROUTER: {
-      API_KEY: getEnv("OPENROUTER_API_KEY"),
-    },
-
-    GEMINI: {
-      API_KEY: getEnv("GEMINI_API_KEY"),
-    },
-  },
+  CORS_ORIGIN: process.env.CORS_ORIGIN,
 });
