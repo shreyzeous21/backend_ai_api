@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { postChat } from "../controllers/aiChatController.js";
+import { postChat } from "../controllers/aiChatOpenrouterController.js";
 
 const router = Router();
 
