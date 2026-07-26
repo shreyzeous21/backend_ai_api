@@ -1,5 +1,10 @@
 # Node AI Gateway
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="api_image.png">
+  <img alt="Node AI Gateway" src="api_image.png" width="100%">
+</picture>
+
 A production-ready Express API gateway for accessing LLMs through **OpenRouter** (400+ models) and **Google Gemini**. Chat with history support, rate limiting, and streaming-ready responses.
 
 ## Setup
