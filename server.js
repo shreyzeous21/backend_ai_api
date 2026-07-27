@@ -14,11 +14,7 @@ app.use(express.static("public"));
 
 app.use(
   cors({
-    origin:
-      // ENV.NODE_ENV === "development"
-      // ?
-      "*",
-    // : ENV.CORS_ORIGIN,
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization", "x-api-key"],
   }),
